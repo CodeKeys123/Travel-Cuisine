@@ -191,7 +191,6 @@ button > a{
     height: 380px;
     overflow: hidden;
     margin-top: 0px;
-    /* padding-left: 1rem; */
     padding-top: 3rem;
     
   }
@@ -239,4 +238,65 @@ footer > ul  > li{
     margin: 10px 30px;
     cursor: pointer;
 }
+ 
+.clouds{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    padding: 0 5%;
+    align-items: center;
+    bottom: -10%;
+}
 
+.cloud > img{
+    width: 50px;
+    animation:bubble 5s linear infinite;
+    opacity: 0;
+}
+
+@keyframes bubble {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-90vh);
+    }
+}
+.cloud:nth-child(1) img{
+    animation-delay: 2s;
+    width: 100px;
+
+}
+.cloud:nth-child(2) img{
+    animation-delay: 6s;
+    width: 100px;
+}
+.cloud:nth-child(3) img{
+    animation-delay: 2.3s;
+    width: 100px;
+}
+.cloud:nth-child(4) img{
+    animation-delay: 8s;
+    width: 100px;
+}
+.cloud:nth-child(5) img{
+    animation-delay: 5s;
+    width: 100px;
+}
+.cloud:nth-child(6) img{
+    animation-delay: 10s;
+    width: 100px;
+}
+.cloud:nth-child(7) img{
+    animation-delay: 9.5s;
+    width: 100px;
+}
